@@ -2,15 +2,16 @@ import sv_ttk # Theme: https://github.com/rdbende/Sun-Valley-ttk-theme
 import tkinter as tk
 from tkinter import ttk, messagebox
 from app.types_fractals import fractals
-
+import os
 
 class FractalApp:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Generador de Fractales")
         # Logo path: app/assets/fractal_icon.ico
-        logo_path = "app/assets/fractal_icon.ico"
-        self.root.iconbitmap(logo_path)
+        base_path = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(base_path, 'assets', 'fractal_icon.ico')
+        self.root.iconbitmap(icon_path)
 
         sv_ttk.set_theme("dark")
         self.fractal_uis = fractals
