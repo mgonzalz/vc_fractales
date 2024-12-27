@@ -1,3 +1,4 @@
-from app.ui import create_app
+from app.ui import FractalApp
 if __name__ == "__main__":
-    create_app()
+    app = FractalApp()
+    app.run()
