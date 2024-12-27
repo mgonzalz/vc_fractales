@@ -3,10 +3,15 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from app.types_fractals import fractals
 
+
 class FractalApp:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Generador de Fractales")
+        # Logo path: app/assets/fractal_icon.ico
+        logo_path = "app/assets/fractal_icon.ico"
+        self.root.iconbitmap(logo_path)
+
         sv_ttk.set_theme("dark")
         self.fractal_uis = fractals
 
