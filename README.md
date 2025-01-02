@@ -37,4 +37,4 @@ El código fuente del proyecto está disponible en el repositorio oficial: GitHu
 
 ## Exportación a `.exe`.
 
-La aplicación ha sido empaquetada en un archivo ejecutable (.exe) empleando PyInstaller, con el propósito de facilitar su distribución y ejecución en entornos Windows sin necesidad de instalaciones adicionales de Python. Este ejecutable está disponible en el directorio `dist` y ha sido diseñado para garantizar su funcionalidad óptima en sistemas compatibles.
+La aplicación ha sido empaquetada en un archivo ejecutable (.exe) empleando PyInstaller, con el propósito de facilitar su distribución y ejecución en entornos Windows sin necesidad de instalaciones adicionales de Python. Este ejecutable está disponible en el directorio `output` y ha sido diseñado para garantizar su funcionalidad óptima en sistemas compatibles.
